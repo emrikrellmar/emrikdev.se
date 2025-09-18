@@ -1,32 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emrik Studio</title>
+    <title>emrikdev.se</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="top">
         <div class="container">
-            <a class="logo" href="#home">Emrik Studio</a>
-            <nav class="site-nav">
+            <a class="logo" href="#home">Emrik Dev</a>
+            <nav class="site-nav" aria-label="Main navigation">
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a class="github-link" href="https://github.com/emrikrellmar" target="_blank" rel="noopener">GitHub</a>
+                <a class="github-link" href="https://github.com/emrikrellmar" target="_blank" rel="noopener">
+                    <img class="github-icon" src="assets/images/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
             </nav>
         </div>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="container">
-                <h1>Design that tells your story</h1>
-                <p>Crafting memorable digital experiences with a focus on clarity, personality, and measurable results.</p>
-                <div class="hero-actions">
-                    <a class="button primary" href="#contact">Start a project</a>
-                    <a class="button secondary" href="#services">View services</a>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>Modern product development that keeps momentum without sacrificing reliability.</h1>
+                    <p>I partner with founders and product teams to design, launch, and scale dependable platforms. Together we ship software that is maintainable from day one and ready for what comes next.</p>
+                    <ul class="hero-highlights">
+                        <li>End-to-end ownership across product, architecture, and delivery</li>
+                        <li>Rapid prototyping backed by robust engineering practices</li>
+                        <li>Transparent collaboration and measurable outcomes</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a class="button primary" href="https://calendar.app.google/JtenauiNAUfM5f9z8" target="_blank" rel="noopener">Book a call</a>
+                        <a class="button secondary" href="#services">See services</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -34,44 +45,80 @@
         <section id="services" class="section">
             <div class="container">
                 <h2>What I do</h2>
-                <div class="grid">
-                    <article class="card">
-                        <h3>Brand Identity</h3>
-                        <p>Logo systems, color palettes, and typography that fit your voice and connect with your audience.</p>
+                <p class="section-lead">Technical partnerships that move your roadmap forward faster while keeping a strong foundation.</p>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <img class="feature-icon" src="assets/images/rocket.png" alt="Web development icon">
+                        <h3>Web development</h3>
+                        <p>High-performing, responsive sites that tell your story clearly and convert visitors into leads.</p>
+                        <ul class="feature-list">
+                            <li>Modern frontends with React/Next.js</li>
+                            <li>Performance, accessibility, and SEO baked in</li>
+                            <li>CMS integrations and launch-ready landing pages</li>
+                        </ul>
                     </article>
-                    <article class="card">
-                        <h3>Web Design</h3>
-                        <p>Responsive websites that feel great across devices and keep visitors moving toward action.</p>
+                    <article class="feature-card">
+                        <img class="feature-icon" src="assets/images/stats.png" alt="Backend icon">
+                        <h3>Backend &amp; platform</h3>
+                        <p>Scalable backends with resilient APIs, strong security, and data flows that match real-world usage.</p>
+                        <ul class="feature-list">
+                            <li>Microservices, serverless, and cloud infrastructure</li>
+                            <li>Database design and integration layers</li>
+                            <li>CI/CD pipelines, testing, and observability</li>
+                        </ul>
                     </article>
-                    <article class="card">
-                        <h3>Content Strategy</h3>
-                        <p>Messaging frameworks and content plans that make every page and post work harder for you.</p>
+                    <article class="feature-card">
+                        <img class="feature-icon" src="assets/images/pricetag.png" alt="Custom solutions icon">
+                        <h3>Custom solutions</h3>
+                        <p>Automation, internal tools, and integrations that free up your team and create measurable impact.</p>
+                        <ul class="feature-list">
+                            <li>Automated workflows and insight dashboards</li>
+                            <li>Integrations across internal and external systems</li>
+                            <li>Technical advisory and team enablement</li>
+                        </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section alt">
-            <div class="container two-column">
-                <div>
-                    <h2>Meet Emrik</h2>
-                    <p>I blend design thinking with storytelling to craft brand and web experiences that feel personal and polished. With each project I prioritize collaboration, clear communication, and delivering results that move your business forward.</p>
+        <section id="about" class="section about">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <div class="portrait-frame about-frame">
+                        <img src="assets/images/emrik.png" alt="Portrait of Emrik Rellmar">
+                    </div>
                 </div>
-                <div class="about-highlights">
-                    <h3>Core principles</h3>
-                    <ul>
-                        <li>Human-first design</li>
-                        <li>Purposeful storytelling</li>
-                        <li>Curiosity and iteration</li>
-                    </ul>
+                <div class="about-content">
+                    <h2>Career map</h2>
+                        <ol class="timeline-list">
+                            <li>
+                                <div class="timeline-badge" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-period">2025 – present</span>
+                                    <h4><a href="https://www.gamecam.se/" target="_blank" rel="noopener">GameCam</a></h4>
+                                    <p>Building AI-powered sports camera systems for a startup, covering product development from prototypes to production.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge" aria-hidden="true"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-period">2022 – 2025</span>
+                                    <h4><a href="https://gymnasieskola.engelholm.se/vara-program/hogskoleforberedande/teknikprogrammet.html" target="_blank" rel="noopener">&Auml;ngelholms Gymnasie</a></h4>
+                                    <p>Studied programming, web server programming, and web development with a focus on practical, real-world projects.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <div class="container">
-                <h2>Let's work together</h2>
-                <p class="section-lead">Have a project in mind or just want to say hello? Drop a note and I'll get back within two business days.</p>
+            <div class="container contact-grid">
+                <div class="contact-intro">
+                    <h2>Would you like to connect?</h2>
+                    <p class="section-lead">Send a message and I’ll get back within one business day. We’ll begin with a quick call to understand your goals and next steps.</p>
+                </div>
                 <form class="contact-form" id="contact-form" method="post">
                     <label>
                         Name
@@ -93,13 +140,18 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; <span id="year"></span> Emrik Studio. All rights reserved.</p>
+        <div class="container footer-grid">
+            <p>&copy; <span id="year"></span> Emrik Dev. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:emrik.rellmar@gmail.com">emrik.rellmar@gmail.com</a>
+                <a href="https://github.com/emrikrellmar" target="_blank" rel="noopener">GitHub</a>
+            </div>
         </div>
     </footer>
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
