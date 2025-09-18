@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emrik Studio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="#home">Emrik Studio</a>
+            <nav class="site-nav">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a class="github-link" href="https://github.com/emrikrellmar" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Design that tells your story</h1>
+                <p>Crafting memorable digital experiences with a focus on clarity, personality, and measurable results.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#contact">Start a project</a>
+                    <a class="button secondary" href="#services">View services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>What I do</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Brand Identity</h3>
+                        <p>Logo systems, color palettes, and typography that fit your voice and connect with your audience.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Web Design</h3>
+                        <p>Responsive websites that feel great across devices and keep visitors moving toward action.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Content Strategy</h3>
+                        <p>Messaging frameworks and content plans that make every page and post work harder for you.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section alt">
+            <div class="container two-column">
+                <div>
+                    <h2>Meet Emrik</h2>
+                    <p>I blend design thinking with storytelling to craft brand and web experiences that feel personal and polished. With each project I prioritize collaboration, clear communication, and delivering results that move your business forward.</p>
+                </div>
+                <div class="about-highlights">
+                    <h3>Core principles</h3>
+                    <ul>
+                        <li>Human-first design</li>
+                        <li>Purposeful storytelling</li>
+                        <li>Curiosity and iteration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Let's work together</h2>
+                <p class="section-lead">Have a project in mind or just want to say hello? Drop a note and I'll get back within two business days.</p>
+                <form class="contact-form" id="contact-form" method="post">
+                    <label>
+                        Name
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        Message
+                        <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+                    </label>
+                    <button type="submit" class="button primary">Send message</button>
+                    <p class="form-status" id="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Emrik Studio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
+
+
