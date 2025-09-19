@@ -453,6 +453,27 @@ main {
     color: var(--muted);
 }
 
+
+.timeline-title {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.timeline-title a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: inherit;
+}
+
+.timeline-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+
 .about-highlights {
     margin: 2rem 0 0 0;
     padding: 0;
@@ -487,7 +508,43 @@ main {
 
 .contact-intro {
     display: grid;
-    gap: 1.25rem;
+    gap: 1.5rem;
+}
+
+.contact-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) * 0.9);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-subtle);
+    display: grid;
+    gap: 0.75rem;
+    text-align: left;
+}
+
+.contact-card img {
+    width: 36px;
+    height: 36px;
+}
+
+.contact-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.contact-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.contact-card .button {
+    justify-content: center;
 }
 
 .contact-direct {
@@ -621,6 +678,8 @@ main {
         padding: 0.85rem 1rem;
     }
 }
+
+
 
 
 
